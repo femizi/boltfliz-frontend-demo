@@ -229,7 +229,7 @@ export default function Home() {
           </div>
           
           {/* mobile grid */}
-          <div className=" grid grid-cols-3 gap-6 md:hidden">
+          <div className=" grid grid-cols-3 gap-6 md:hidden mb-6">
           <div className="relative">
               <div className="w-full">
                <img className="w-full" src="/assets/image cover 6 small.png" alt="image-cover" />
