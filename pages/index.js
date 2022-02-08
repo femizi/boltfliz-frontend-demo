@@ -184,8 +184,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            
             {/* genre buttons */}
-          <div className="genre-buttons flex justify-between gap-8 my-6 place-content-center">
+          <div className="genre-buttons flex justify-between gap-8 my-6 place-content-center md:hidden">
             <div className="rounded-3xl bg-[#FF10F0] w-fit px-4 py-2"> All</div>
             <div className="rounded-3xl bg-slate-300 w-fit px-4 py-2">Action</div>
             <div className="rounded-3xl bg-slate-300 w-fit px-4 py-2">Adventure</div>
@@ -193,11 +194,18 @@ export default function Home() {
             <div className="rounded-3xl bg-slate-300 w-fit px-4 py-2">African</div>
           </div>
           {/* mobile popular movies */}
-          <div className="flex my-6 justify-start font-bold text-3xl">
+          <div className="flex my-6 justify-start font-bold text-3xl md:hidden">
             Popular movies
           </div>
           {/* long grid */}
-          
+          <div>
+            <div className="grid place-content-center md:hidden">
+              <a href="#">
+                <img src="/assets/long.png" alt="image cover" />
+              </a>
+            </div>
+          </div>
+
 
           <div className="flex justify-between my-6">
             <div className="flex justify-between align-middle gap-2">
@@ -428,7 +436,7 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <div className="mobile-buttons fixed bottom-0 inset-x-0 bg-white py-4 px-6 flex justify-between text-sm">
+      <div className="mobile-buttons md:hidden fixed bottom-0 inset-x-0 bg-white py-4 px-6 flex justify-between text-sm">
         <div><button>
           <img src="/assets/home.svg"></img>
           </button></div>
