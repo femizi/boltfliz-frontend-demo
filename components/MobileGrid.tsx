@@ -1,9 +1,8 @@
 import React from 'react'
-import LongImageCard from './LongImageCard'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-const LongMovieGrid = () => {
+import MobileMovieCard from './MobileMovieCard';
+const MobileGrid = () => {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
@@ -17,36 +16,35 @@ const LongMovieGrid = () => {
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
-          items: 1,
-          slidesToSlide: 1 // optional, default to 1.
+          items: 3,
+          slidesToSlide: 3 // optional, default to 1.
         }
       };
 
   return (
-    <div className="grid md:hidden md:grid-cols-2 lg:grid-cols-3 md:gap-6">
-        <Carousel 
-        infinite={true}
+    <Carousel 
+    infinite={true}
        
         autoPlaySpeed={1000}
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
-        centerMode={true}
+        
         containerClass="carousel-container "
-        sliderClass='grid place-content-center gap-4'
+        sliderClass='md:grid hidden md:grid-cols-2 lg:grid-cols-3 md:gap-6'
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        responsive={responsive}>
+    responsive={responsive}
+    >
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
 
-        <LongImageCard/>
-        <LongImageCard/>
-        <LongImageCard/>
-
-        </Carousel>
-  
-     
-    
-  </div>
+    </Carousel>
   )
 }
 
-export default LongMovieGrid
+export default MobileGrid

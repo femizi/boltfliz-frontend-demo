@@ -8,6 +8,7 @@ import MovieCard from "./MovieCard";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MovieBannerCard from "./MovieBannerCard";
+import MobileGrid from "./MobileGrid";
 
 const Main = () => {
   return (
@@ -73,6 +74,7 @@ const Main = () => {
         <MobileMovieCard />
       </div>
       {/* desktop grid */}
+      {/* <MobileGrid/> */}
       <div className="md:grid hidden md:grid-cols-2 lg:grid-cols-3 md:gap-6">
         <MovieCard />
         <MovieCard />
