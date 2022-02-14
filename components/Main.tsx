@@ -15,7 +15,14 @@ const Main = () => {
     <main className="container__main px-6 overflow-auto bg-white lg:bg-[#EEF1FB] ">
       {/* large movie banner  doesn't show on mobile*/}
       <div className="lg:mt-20 mt-16 border-special pt-1 hidden md:block">
-        <Carousel infiniteLoop useKeyboardArrows autoPlay showStatus={false} showThumbs={false}>
+        <Carousel
+          infiniteLoop
+          useKeyboardArrows
+          autoPlay
+          showStatus={false}
+          showThumbs={false}
+          showIndicators={false}
+        >
           <LargeMovieBanner />
           <LargeMovieBanner />
 
@@ -29,7 +36,14 @@ const Main = () => {
         <div className="font-semibold"> See More</div>
       </div>
       {/* Mobile Carousel */}
-      <Carousel infiniteLoop useKeyboardArrows autoPlay showStatus={false}>
+      <Carousel
+        infiniteLoop
+        useKeyboardArrows
+        showThumbs={false}
+        autoPlay
+        showStatus={false}
+        showIndicators={false}
+      >
         <MovieBannerCard />
         <MovieBannerCard />
         <MovieBannerCard />
