@@ -20,6 +20,9 @@ a {
   font-family: 'Roboto', sans-serif;
   
 }
+margin-not-last> * + *{
+  margin-right: 12px;
+}
 .container {
   display: flex;
 }

@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <div className="pt-2">
             <button>
-            <img className="w-[23px] h-[28px]" src="/assets/bell.svg" alt="bell" />
+            <img className="w-[23px] h-[28px]" src="/assets/moon.svg" alt="bell" />
             </button>
             
           </div>

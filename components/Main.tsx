@@ -24,45 +24,41 @@ const Main = () => {
           showStatus={false}
           showThumbs={false}
           showIndicators={false}
-          renderArrowPrev={(
-            onClickHandler,
-            hasPrev: boolean,
-            label: string
-          ) =>  hasPrev &&(
-            <button
-            onClick={onClickHandler}
-            title= {label}
-            style={{
-              top:"50%",
-              bottom:"auto",
-              zIndex: 2,
-              padding:".4em",
-              position:"absolute"
-            }}
-            >
-              <Arrowprev />
-            </button>
-          )}
-          renderArrowNext={(
-            onClickHandler,
-            hasNext: boolean,
-            label: string
-          ) =>  hasNext &&(
-            <button
-            onClick={onClickHandler}
-            title= {label}
-            style={{
-              top:"50%",
-              bottom:"auto",
-              zIndex: 2,
-              padding:".4em",
-              position:"absolute",
-              right:"0"
-            }}
-            >
-              <ArrowNext />
-            </button>
-          )}
+          renderArrowPrev={(onClickHandler, hasPrev: boolean, label: string) =>
+            hasPrev && (
+              <button
+                onClick={onClickHandler}
+                title={label}
+                style={{
+                  top: "50%",
+                  bottom: "auto",
+                  zIndex: 2,
+                  padding: ".4em",
+                  position: "absolute",
+                }}
+              >
+                <Arrowprev />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext: boolean, label: string) =>
+            hasNext && (
+              <button
+                onClick={onClickHandler}
+                title={label}
+                style={{
+                  top: "50%",
+                  bottom: "auto",
+                  zIndex: 2,
+                  padding: ".4em",
+                  position: "absolute",
+                  right: "0",
+                }}
+              >
+                <ArrowNext />
+              </button>
+            )
+          }
         >
           <LargeMovieBanner />
           <LargeMovieBanner />
@@ -84,6 +80,41 @@ const Main = () => {
         autoPlay
         showStatus={false}
         showIndicators={false}
+        renderArrowPrev={(onClickHandler, hasPrev: boolean, label: string) =>
+          hasPrev && (
+            <button
+              onClick={onClickHandler}
+              title={label}
+              style={{
+                top: "50%",
+                bottom: "auto",
+                zIndex: 2,
+                padding: ".4em",
+                position: "absolute",
+              }}
+            >
+              <Arrowprev />
+            </button>
+          )
+        }
+        renderArrowNext={(onClickHandler, hasNext: boolean, label: string) =>
+          hasNext && (
+            <button
+              onClick={onClickHandler}
+              title={label}
+              style={{
+                top: "50%",
+                bottom: "auto",
+                zIndex: 2,
+                padding: ".4em",
+                position: "absolute",
+                right: "0",
+              }}
+            >
+              <ArrowNext />
+            </button>
+          )
+        }
       >
         <MovieBannerCard />
         <MovieBannerCard />
@@ -129,11 +160,14 @@ const Main = () => {
         <MobileMovieCard />
       </div>
       {/* desktop grid */}
-      {/* <MobileGrid/> */}
-      <div className="md:grid hidden md:grid-cols-2 lg:grid-cols-3 md:gap-6">
+
+      <div className="  md:grid  grid-cols-2 gap-4 overflow-y-hidden overflow-x-scroll hidden ">
         <MovieCard />
         <MovieCard />
         <MovieCard />
+        <MovieCard />
+        <MovieCard />
+
       </div>
       {/* end of first grid */}
 
@@ -161,11 +195,11 @@ const Main = () => {
         </div>
       </div>
       {/* second grid */}
-      <div className="md:grid hidden md:grid-cols-2 lg:grid-cols-3 md:gap-6">
+      <div className="md:grid  hidden md:grid-cols-2  md:gap-6 ">
         <MovieCard />
 
         <MovieCard />
-
+        <MovieCard />
         <MovieCard />
       </div>
     </main>

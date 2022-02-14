@@ -22,26 +22,14 @@ const MainGenreButtons = () => {
       };
     
   return (
-    <div className="genre-buttons my-6 place-content-center md:hidden">
-    <Carousel
-  
-  
-  autoPlaySpeed={1000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container block md:hidden"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  
-  dotListClass="custom-dot-list-style mr-5"
-  itemClass="carousel-item-padding-40-px"
-    responsive={responsive}>
-    <div className="rounded-lg bg-[#FF10F0] w-fit px-4 py-2"> All</div>
-    <div className="rounded-lg bg-slate-300 w-fit px-4 py-2">Action</div>
-    <div className="rounded-lg bg-slate-300 w-fit px-4 py-2">Adventure</div>
-    <div className="rounded-lg bg-slate-300 w-fit px-4 py-2">Drama </div>
-    <div className="rounded-lg bg-slate-300 w-fit px-4 py-2">African</div>
-    </Carousel>
+    <div className="genre-buttons my-6 overscroll-contain md:hidden flex flex-nowrap gap-4 overflow-y-hidden overflow-x-scroll ">
+   
+    <div className="rounded-lg bg-[#FF10F0] flex-initial  w-fit px-4 py-2"> All</div>
+    <div className="rounded-lg bg-slate-300 flex-initial w-fit px-4 py-2">Action</div>
+    <div className="rounded-lg bg-slate-300 flex-initial w-fit px-4 py-2">Adventure</div>
+    <div className="rounded-lg bg-slate-300 flex-initial w-fit px-4 py-2">Drama </div>
+    <div className="rounded-lg bg-slate-300 flex-initial w-fit px-4 py-2">African</div>
+   
    </div>
   )
 }

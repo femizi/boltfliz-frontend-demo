@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const MovieCard = () => {
   return (
-    <div className="relative">
+    <div className="relative inline-block  ">
       <div className="w-full">
        <img className="w-full" src="/assets/image cover 5.png" alt="image-cover" />
       </div>
