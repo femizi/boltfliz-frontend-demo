@@ -18,7 +18,7 @@ export default function Home() {
 
         
       </div>
-      <div className="mobile-buttons md:hidden fixed bottom-0 inset-x-0 bg-white py-4 px-6 flex justify-between text-sm">
+      <div className="mobile-buttons md:hidden fixed bottom-0 inset-x-0 bg-white py-2 px-6 flex justify-between text-sm">
         <div><button>
           <img className="circle bg-white p-3" src="/assets/home.svg" alt="home-button"></img>
           </button></div>

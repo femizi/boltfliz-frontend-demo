@@ -9,6 +9,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MovieBannerCard from "./MovieBannerCard";
 import MobileGrid from "./MobileGrid";
+import Arrowprev from "./Arrowprev";
+import ArrowNext from "./ArrowNext";
 
 const Main = () => {
   return (
@@ -22,6 +24,45 @@ const Main = () => {
           showStatus={false}
           showThumbs={false}
           showIndicators={false}
+          renderArrowPrev={(
+            onClickHandler,
+            hasPrev: boolean,
+            label: string
+          ) =>  hasPrev &&(
+            <button
+            onClick={onClickHandler}
+            title= {label}
+            style={{
+              top:"50%",
+              bottom:"auto",
+              zIndex: 2,
+              padding:".4em",
+              position:"absolute"
+            }}
+            >
+              <Arrowprev />
+            </button>
+          )}
+          renderArrowNext={(
+            onClickHandler,
+            hasNext: boolean,
+            label: string
+          ) =>  hasNext &&(
+            <button
+            onClick={onClickHandler}
+            title= {label}
+            style={{
+              top:"50%",
+              bottom:"auto",
+              zIndex: 2,
+              padding:".4em",
+              position:"absolute",
+              right:"0"
+            }}
+            >
+              <ArrowNext />
+            </button>
+          )}
         >
           <LargeMovieBanner />
           <LargeMovieBanner />

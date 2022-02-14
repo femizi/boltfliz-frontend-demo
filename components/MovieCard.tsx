@@ -9,7 +9,7 @@ const MovieCard = () => {
        <img className="w-full" src="/assets/image cover 5.png" alt="image-cover" />
       </div>
       <div className="absolute inset-x-0 bottom-0 w-full flex gap-2  justify-between p-2 rounded-t-md font-semibold text-white backdrop-blur-sm backdrop-saturate-150 bg-white/30">
-        <div className="bg-white rounded-lg p-2 w-[35px] h-[35px] circle grid place-content-center">
+        <div className="bg-white  p-2 w-[35px] h-[35px] circle grid place-content-center">
           <Image
             src="/assets/arrow-right.svg"
             width="5px"

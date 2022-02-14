@@ -32,19 +32,8 @@ const Sidebar = () => {
       African
     </div>
   </div>
-  <div className="my-4 flex gap-2">
-    <img src="assets/add.svg" alt="add" />
-    <h2 className="font-bold">Add your favorite Genre</h2>
-  </div>
-  <div className="grid grid-cols-3 gap-2 text-white text-sm">
-    <div className="rounded-3xl bg-blue-500 w-fit px-2 py-1">Crime</div>
-    <div className="rounded-3xl bg-yellow-500 w-fit px-2 py-1">
-      Comedy
-    </div>
-    <div className="rounded-3xl bg-red-500 w-fit px-2 py-1">
-      Thriller
-    </div>
-  </div>
+  
+  
   {/* end of favorite genre */}
 </aside>;
 };
