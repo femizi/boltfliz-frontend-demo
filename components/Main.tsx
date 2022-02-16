@@ -14,7 +14,7 @@ import ArrowNext from "./ArrowNext";
 
 const Main = () => {
   return (
-    <main className="container__main px-6 overflow-auto bg-white lg:bg-[#EEF1FB] ">
+    <main className="container__main px-6 overflow-auto bg-white lg:bg-[#EEF1FB]  dark:bg-black dark:text-white">
       {/* large movie banner  doesn't show on mobile*/}
       <div className="lg:mt-20 mt-16 border-special pt-1 hidden md:block">
         <Carousel
