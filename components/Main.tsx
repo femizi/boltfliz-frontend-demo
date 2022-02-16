@@ -62,7 +62,6 @@ const Main = () => {
         >
           <LargeMovieBanner />
           <LargeMovieBanner />
-
           <LargeMovieBanner />
         </Carousel>
       </div>
@@ -161,13 +160,12 @@ const Main = () => {
       </div>
       {/* desktop grid */}
 
-      <div className="  md:grid  grid-cols-2 gap-4 overflow-y-hidden overflow-x-scroll hidden ">
+      <div className="   my-6 overscroll-contain md:block whitespace-nowrap gap-4 overflow-y-hidden overflow-x-scroll hidden ">
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
-
       </div>
       {/* end of first grid */}
 
@@ -195,7 +193,7 @@ const Main = () => {
         </div>
       </div>
       {/* second grid */}
-      <div className="md:grid  hidden md:grid-cols-2  md:gap-6 ">
+      <div className="my-6 overscroll-contain md:block whitespace-nowrap gap-4 overflow-y-hidden overflow-x-scroll hidden ">
         <MovieCard />
 
         <MovieCard />

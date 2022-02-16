@@ -4,9 +4,10 @@ import Image from "next/image";
 
 const MovieCard = () => {
   return (
-    <div className="relative inline-block  ">
-      <div className="w-full">
-       <img className="w-full" src="/assets/image cover 5.png" alt="image-cover" />
+   <div className='inline-block px-2' >
+      <div className="relative ">
+      <div className="w-full ">
+       <img className="w-full rounded-lg outline-purple-600 outline-2" src="/assets/image cover 5.png" alt="image-cover" />
       </div>
       <div className="absolute inset-x-0 bottom-0 w-full flex gap-2  justify-between p-2 rounded-t-md font-semibold text-white backdrop-blur-sm backdrop-saturate-150 bg-white/30">
         <div className="bg-white  p-2 w-[35px] h-[35px] circle grid place-content-center">
@@ -27,6 +28,7 @@ const MovieCard = () => {
         </div>
       </div>
     </div>
+   </div>
   )
 }
 
