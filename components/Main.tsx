@@ -153,7 +153,7 @@ const Main = () => {
       </div>
 
       {/* mobile grid */}
-      <div className=" grid grid-cols-3 gap-6 md:hidden mb-[120px]">
+      <div className=" grid grid-cols-2 gap-6 md:hidden mb-[120px]">
         <MobileMovieCard />
         <MobileMovieCard />
         <MobileMovieCard />
