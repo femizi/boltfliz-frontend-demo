@@ -122,13 +122,13 @@ const Main = () => {
       {/* genre buttons */}
       <MainGenreButtons />
       {/* mobile popular movies */}
-      <div className="flex  my-6 justify-start font-bold text-2xl md:hidden">
+      <div className="flex  my-5 justify-start font-bold text-2xl md:hidden">
         Popular movies
       </div>
       {/* long grid */}
       <LongMovieGrid />
 
-      <div className="flex justify-between my-6">
+      <div className="flex justify-between my-5 md:my-6">
         <div className="flex justify-between align-middle gap-2">
           <div className="font-bold text-2xl">Continue Watching</div>
           <div className="font-semi-bold text-sm  place-content-center hidden md:grid">
