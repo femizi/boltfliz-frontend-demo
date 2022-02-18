@@ -12,8 +12,9 @@ const LongImageCard = ( {containerRef}) => {
     
     >
       {({ inView, ref, entry }) => (
-        <div ref={ref} className={inView? "rounded-lg scale-95 -mx-4 inline-block transition ease-in-out": "rounded-lg  -mx-10 scale-50 transition ease-in-out inline-block"}>
+        <div ref={ref} className={entry.intersectionRatio=== 1? "rounded-lg  inline-block transition ease-in-out": "rounded-lg  -mx-2 scale-75 transition ease-in-out inline-block"}>
           <a href="#">
+            {console.log(entry)}
             <img src="/assets/long.png" alt="image cover" />
             
           </a>
