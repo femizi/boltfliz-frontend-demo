@@ -19,7 +19,12 @@ export default function Home() {
   
   }
   return (
+    
     <div className={darkMode? "main relative text-[18px] md:text-[20px] dark": "main relative text-[18px] md:text-[20px] "}>
+      <Head>
+      <title>Boltfliz</title>
+      <meta name="theme-color" content={darkMode? "#121212":"white"}/>
+      </Head>
       <Header 
       triggerDarkMode={triggerDarkMode}
       
