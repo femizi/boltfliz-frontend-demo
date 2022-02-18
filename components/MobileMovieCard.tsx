@@ -3,9 +3,9 @@ import React from 'react'
 
 const MobileMovieCard = () => {
   return (
-    <div className="relative">
-      <div className="w-full">
-       <img className="w-full" src="/assets/image cover 6 small.png" alt="image-cover" />
+    <div className="relative rounded-lg">
+      <div className="w-full rounded-lg">
+       <img className="w-full rounded-lg" src="/assets/image cover 6 small.png" alt="image-cover" />
       </div>
       <div className="absolute pr-3 top-0 right-0 pt-3">
       <div className="absolute top-0 right-0    justify-between pr-3 pt-3  font-semibold ">

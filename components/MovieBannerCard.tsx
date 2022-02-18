@@ -4,7 +4,7 @@ import Image from "next/image";
 const MovieBannerCard = () => {
   return (
     <div className="relative md:hidden">
-    <div className="w-full rounded-sm">
+    <div className="w-full rounded-md">
      <img className="w-full rounded-md" src="/assets/image cover 4.png" alt="image-cover" />
     </div>
     <div className="absolute inset-x-0 bottom-0 w-full flex  justify-between p-4 font-semibold text-white backdrop-blur-sm backdrop-saturate-150 bg-white/30">
