@@ -53,7 +53,7 @@ const Header = ({triggerDarkMode}) => {
         </div>
         
       </header>
-      <div className="block text-md font-semibold  md:hidden py-5 dark:bg-black dark:text-white">
+      <div className="block text-md font-semibold  md:hidden py-2 dark:bg-black dark:text-white">
           <ul className="flex flex-column justify-between px-6 gap-8">
             <li>Movies</li>
             <li>Tv shows</li>

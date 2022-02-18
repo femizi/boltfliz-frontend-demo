@@ -67,7 +67,7 @@ const Main = () => {
       </div>
       {/* start of grid rows */}
 
-      <div className="flex justify-between  py-6 md:hidden">
+      <div className="flex justify-between py-4 md:py-6 md:hidden">
         <div className="font-bold"> New Release</div>
         <div className=""> See More</div>
       </div>
