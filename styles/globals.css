@@ -40,6 +40,14 @@ display:block;
 .circle{
 border-radius:50%;
 }
+.scrollbar-none::-webkit-scrollbar{
+display:none
+}
+
+scrollbar-none{
+-ms-overflow-style: none;
+scrollbar-width: none
+}
 .container__main {
   /* Take the remaining width */
   flex: 1;

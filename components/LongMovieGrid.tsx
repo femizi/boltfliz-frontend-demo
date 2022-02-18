@@ -7,7 +7,7 @@ const LongMovieGrid = () => {
 const containerRef = useRef(null)
 
   return (
-    <div ref={containerRef} className="longmoviegrid md:hidden my-6 whitespace-nowrap overflow-y-hidden overflow-x-scroll">
+    <div ref={containerRef} className="longmoviegrid md:hidden scrollbar-none my-6 whitespace-nowrap overflow-y-hidden overflow-x-scroll">
        
 
         <LongImageCard containerRef={containerRef} />

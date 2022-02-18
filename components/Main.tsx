@@ -14,7 +14,7 @@ import ArrowNext from "./ArrowNext";
 
 const Main = () => {
   return (
-    <main className="container__main px-6 overflow-auto bg-white lg:bg-[#EEF1FB]  dark:bg-black dark:text-white">
+    <main className="container__main px-6 overscroll-auto overflow-auto bg-white lg:bg-[#EEF1FB]  dark:bg-black dark:text-white">
       {/* large movie banner  doesn't show on mobile*/}
       <div className="lg:mt-20 mt-16 border-special pt-1 hidden md:block">
         <Carousel
@@ -69,7 +69,7 @@ const Main = () => {
 
       <div className="flex justify-between  py-6 md:hidden">
         <div className="font-bold"> New Release</div>
-        <div className="font-semibold"> See More</div>
+        <div className=""> See More</div>
       </div>
       {/* Mobile Carousel */}
       <Carousel
@@ -85,7 +85,7 @@ const Main = () => {
               onClick={onClickHandler}
               title={label}
               style={{
-                top: "50%",
+                top: "40%",
                 bottom: "auto",
                 zIndex: 2,
                 padding: ".4em",
@@ -102,7 +102,7 @@ const Main = () => {
               onClick={onClickHandler}
               title={label}
               style={{
-                top: "50%",
+                top: "40%",
                 bottom: "auto",
                 zIndex: 2,
                 padding: ".4em",
@@ -122,7 +122,7 @@ const Main = () => {
       {/* genre buttons */}
       <MainGenreButtons />
       {/* mobile popular movies */}
-      <div className="flex my-6 justify-start font-bold text-3xl md:hidden">
+      <div className="flex  my-6 justify-start font-bold text-2xl md:hidden">
         Popular movies
       </div>
       {/* long grid */}
@@ -130,7 +130,7 @@ const Main = () => {
 
       <div className="flex justify-between my-6">
         <div className="flex justify-between align-middle gap-2">
-          <div className="font-bold text-3xl">Continue Watching</div>
+          <div className="font-bold text-2xl">Continue Watching</div>
           <div className="font-semi-bold text-sm  place-content-center hidden md:grid">
             43 Movies
           </div>
@@ -139,7 +139,7 @@ const Main = () => {
           <div className="text-sm font-semi-bold  place-content-center hidden md:grid">
             All Movies
           </div>
-          <div>
+          <div className="grid place-content-center">
             <button>
               <Image
                 src="/assets/arrow-right.svg"
