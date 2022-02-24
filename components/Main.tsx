@@ -168,19 +168,15 @@ const Main = () => {
         </div>
       </div>
       {/* second grid */}
-      <div className="hidden grid-cols-2 gap-3 md:grid md:grid-cols-3 ">
+      <div className="grid grid-cols-2 gap-3  md:grid-cols-3 ">
         <MobileMovieCard/>
         <MobileMovieCard/>
         <MobileMovieCard/>
         <MobileMovieCard/>
         <MobileMovieCard/>
       </div>
-        {/* mobile popular movies */}
-        <div className="flex  my-5 justify-start font-bold text-2xl md:hidden">
-        Popular
-      </div>
-      {/* long grid */}
-      <LongMovieGrid />
+       
+       
     </main>
   );
 };
