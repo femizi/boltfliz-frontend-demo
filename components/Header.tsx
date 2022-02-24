@@ -7,19 +7,10 @@ const Header = ({triggerDarkMode}) => {
     <header className="header flex w-full justify-between px-6 py-4 bg-none relative lg:absolute top-0 z-10 dark:bg-black dark:text-white">
         <div className="logo lg:w-1/3 relative">
           
-          <h1 className="font-bold text-2xl relative dark:text-white">
-            <span className="dot absolute w-[10px] h-[10px]  -left-3 inset-y-3 circle bg-[#FF10F0]"> </span>
-            Boltfliz</h1>
+          <img src="/assets/logo.png" alt="" />
         </div>
-        <div className="hidden md:block">
-          <ul className="flex flex-column justify-evenly gap-10 md:gap-6">
-            <li>Movies</li>
-            <li>Tv shows</li>
-            <li>Animations</li>
-            <li>Music </li>
-          </ul>
-        </div>
-        <div className=" flex-row gap-6 hidden sm:flex">
+     
+        <div className=" flex-row gap-y-10 hidden sm:flex flex-grow justify-between">
           <div className="relative">
             <span className="absolute inset-y-0 left-0 flex items-center pl-2">
               <button
@@ -35,7 +26,7 @@ const Header = ({triggerDarkMode}) => {
             <input
               type="search"
               placeholder="Search... "
-              className="py-2 pl-10 rounded-md focus:outline-none border-2 border-[#D4D4D4]"
+              className="py-2 pl-10 rounded-xl focus:outline-none border-2 border-[#D4D4D4]"
             ></input>
           </div>
           <div className="pt-2">
@@ -43,10 +34,7 @@ const Header = ({triggerDarkMode}) => {
             onClick={ () => triggerDarkMode()
             }
             >
-           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path className='dark:fill-white fill-black' d="M16.4555 0C17.7926 1.9793 18.5061 4.31379 18.5039 6.7024C18.5039 13.3828 13.0294 18.7984 6.2757 18.7984C4.06764 18.8025 1.89943 18.2103 0 17.0844C2.08323 21.1852 6.37171 24 11.327 24C18.3263 24 24 18.3876 24 11.464C24 6.3468 20.8983 1.9484 16.4555 0Z" fill="#BDBDBD"/>
-</svg>
-
+        <img className='w-[35px]  circle align-middle' src="/assets/profile.png" alt="" />
             </button>
             
           </div>
@@ -56,8 +44,8 @@ const Header = ({triggerDarkMode}) => {
       <div className="block text-md font-semibold  md:hidden py-2 dark:bg-black dark:text-white">
           <ul className="flex flex-column justify-between px-6 gap-8">
             <li>Movies</li>
-            <li>Tv shows</li>
-            <li>Animations</li>
+            <li>News</li>
+            <li>Sounds</li>
             
           </ul>
         </div>

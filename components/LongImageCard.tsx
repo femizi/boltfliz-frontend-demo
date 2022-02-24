@@ -16,7 +16,7 @@ const LongImageCard = ({ containerRef }) => {
           className={
             inView
               ? "rounded-lg  inline-block transition ease-in-out"
-              : "rounded-lg  -mx-2 scale-75 transition ease-in-out inline-block"
+              : "rounded-lg   scale-95 transition ease-in-out inline-block"
           }
         >
           <a href="#">

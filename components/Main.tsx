@@ -23,7 +23,7 @@ const Main = () => {
           autoPlay
           showStatus={false}
           showThumbs={false}
-          showIndicators={false}
+          showIndicators={true}
           renderArrowPrev={(onClickHandler, hasPrev: boolean, label: string) =>
             hasPrev && (
               <button
@@ -78,7 +78,7 @@ const Main = () => {
         showThumbs={false}
         autoPlay
         showStatus={false}
-        showIndicators={false}
+        showIndicators={true}
         renderArrowPrev={(onClickHandler, hasPrev: boolean, label: string) =>
           hasPrev && (
             <button
@@ -121,46 +121,30 @@ const Main = () => {
       </Carousel>
       {/* genre buttons */}
       <MainGenreButtons />
-      {/* mobile popular movies */}
-      <div className="flex  my-5 justify-start font-bold text-2xl md:hidden">
-        Popular movies
-      </div>
-      {/* long grid */}
-      <LongMovieGrid />
+    
 
       <div className="flex justify-between my-5 md:my-6">
         <div className="flex justify-between align-middle gap-2">
-          <div className="font-bold text-2xl">Continue Watching</div>
-          <div className="font-semi-bold text-sm  place-content-center hidden md:grid">
-            43 Movies
-          </div>
+          <div className="font-bold text-2xl">News</div>
+          
         </div>
         <div className="flex justify-between gap-4 ">
-          <div className="text-sm font-semi-bold  place-content-center hidden md:grid">
-            All Movies
-          </div>
-          <div className="grid place-content-center">
-            <button>
-              <Image
-                src="/assets/arrow-right.svg"
-                width="5px"
-                height="11px"
-                alt="continue"
-              ></Image>
-            </button>
-          </div>
+          
+          
         </div>
       </div>
 
       {/* mobile grid */}
       <div className=" grid grid-cols-2 gap-6 md:hidden mb-[120px]">
-        <MobileMovieCard />
-        <MobileMovieCard />
-        <MobileMovieCard />
+      <MovieCard />
+        <MovieCard />
+        <MovieCard />
+        <MovieCard />
+        <MovieCard />
       </div>
       {/* desktop grid */}
 
-      <div className="   my-6 overscroll-contain md:block whitespace-nowrap gap-4 overflow-y-hidden overflow-x-scroll hidden ">
+      <div className="   hidden grid-cols-2 gap-3 md:grid md:grid-cols-3">
         <MovieCard />
         <MovieCard />
         <MovieCard />
@@ -173,33 +157,30 @@ const Main = () => {
         <div className="flex justify-between align-middle gap-2">
           <div className="font-bold text-3xl">Popular Movies</div>
           <div className="font-semi-bold text-sm grid place-content-center">
-            43 Movies
+            
           </div>
         </div>
         <div className="flex justify-between gap-4 ">
-          <div className="text-sm font-semi-bold grid place-content-center">
-            All Movies
-          </div>
+         
           <div>
-            <button>
-              <Image
-                src="/assets/arrow-right.svg"
-                width="5px"
-                height="11px"
-                alt="continue"
-              ></Image>
-            </button>
+          
           </div>
         </div>
       </div>
       {/* second grid */}
-      <div className="my-6 overscroll-contain md:block whitespace-nowrap gap-4 overflow-y-hidden overflow-x-scroll hidden ">
-        <MovieCard />
-
-        <MovieCard />
-        <MovieCard />
-        <MovieCard />
+      <div className="hidden grid-cols-2 gap-3 md:grid md:grid-cols-3 ">
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
+        <MobileMovieCard/>
       </div>
+        {/* mobile popular movies */}
+        <div className="flex  my-5 justify-start font-bold text-2xl md:hidden">
+        Popular
+      </div>
+      {/* long grid */}
+      <LongMovieGrid />
     </main>
   );
 };
